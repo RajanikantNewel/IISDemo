@@ -12,6 +12,7 @@ pipeline {
             def backupFolder = "C:\\IISDemo\\BackUp_Pipeline_Angular_2\\${currentDateTime}"
 echo "Output: ${backupFolder}"
             // Create the backup folder
+          //
         bat "mkdir ${backupFolder}"
             // Check if node_modules directory exists
             if (fileExists('node_modules')) {
