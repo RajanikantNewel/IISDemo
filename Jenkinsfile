@@ -19,7 +19,7 @@ pipeline {
          stage('Build') {
             steps {
                 // Build the Angular application
-                bat 'npm start'
+                bat 'npm run build'
             }
         }
          stage('Deploy to IIS') {
