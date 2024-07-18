@@ -1,0 +1,88 @@
+.contactTable {
+  margin: 50px 15px;
+    /* text-align: center; */
+    border: 1px solid #b0afaf;
+    box-shadow: 1px 2px 5px #b0afaf, -1px -2px 5px #ffffff;
+    background-color: white !important;
+    padding: 20px 10px;
+  }
+  
+  .contactTable__table {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .tableTitle{
+    /* text-align: left !important; */
+    color: #777777 !important;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  
+  .contactTable__headerCell {
+    /* background-color: #acacac;
+    color: white;
+    padding: 10px; */
+    padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  background-color: #ffffff;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17.5px !important;
+  }
+
+  tr{
+    font-size: 14px;
+  }
+  
+  .contactTable__input {
+    /* width: 250px;
+    height: 30px;
+    border: 0;
+    outline: none;
+    border-radius: 6px;
+    padding: 0 3px; */
+    padding: 5px 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  }
+  
+  .contactTable__buttonSave {
+    padding: 3px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: #009ef7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .contactTable__buttonCancel {
+    padding: 3px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: #f1416c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .contactTable__action {
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .contactTable__icon {
+    height: 25px;
+    vertical-align: middle;
+  }
+
+  .editBtns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  

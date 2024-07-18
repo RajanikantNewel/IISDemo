@@ -1,0 +1,306 @@
+.distributorMasterTable {
+   
+    /* margin-top: 80px; */
+    text-align: center;
+    margin: 50px 15px;
+    border: 1px solid #b0afaf;
+    box-shadow:0 2px 2px rgba(204, 197, 185, 0.5);
+    background-color: white !important;
+    padding: 20px 10px !important;
+    /* overflow-x: hidden; */
+    max-width: 100%;
+    /* width: 80%; */
+    
+  }
+
+
+
+
+/*   
+  .tableHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .tableHeaderLeft {
+    display: flex;
+    align-items: center;
+  }
+  
+  .filterInput {
+    margin-left: 20px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #777777;
+    height: 30px;
+
+  }
+  
+  .tableAction {
+    padding-right: 10px;
+    cursor: pointer;
+  }
+  
+  .sendButton {
+    height: 30px;
+  }
+  
+  .tableRow {
+   
+  }
+
+  
+   .rowRejected {
+    background-color: inherit;
+  } 
+  
+  .rowPaid {
+    background-color: inherit;
+  }
+  
+  .rowSelected {
+    background-color: #add8e6 !important;
+  }
+  
+  .downloadLink {
+    cursor: pointer;
+    color: #009ef7;
+  }
+
+  table {
+    margin-bottom: 20px;
+    background-color: white;
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #ddd;
+    box-shadow: 4px 5px 10px rgba(63, 65, 65, 0.2);
+  }
+  
+
+
+
+  
+table {
+  margin-bottom: 20px;
+  background-color: white;
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid #ddd;
+  box-shadow: 4px 5px 10px rgba(63, 65, 65, 0.2);
+}
+
+th {
+  text-align: center;
+  background-color: #acacac;
+  padding: 7px;
+  border: 2px solid white;
+  
+  font-weight: 500;
+
+}
+tr {
+  border-bottom: 2px solid grey;
+}
+td {
+  border: 2px solid #d7d4d4;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+} 
+
+td {
+  padding: 8px;
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+  border-right: none;
+}
+
+tr:last-child td {
+  border-bottom: none;
+} */
+
+
+/* General table styles */
+table {
+  margin-top: 20px;
+  width: 170%;
+  border-collapse: collapse;
+  color: #252422;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  
+
+}
+
+th {
+  background-color: #ffffff;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17.5px !important;
+}
+
+tr {
+  background-color: #ffffff;
+  font-size: 14px !important;
+}
+
+/* tr:hover {
+  background-color: #f1f1f1;
+}  */
+
+
+ .tableHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.tableHeaderLeft {
+  display: flex;
+  align-items: center;
+}
+
+.tableTitle {
+  font-size: 1.3rem;
+  /* font-weight: bold; */
+  margin-right: 20px;
+  color: #777777;
+  font-weight: 600;
+}
+
+.filterInput {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tableAction {
+  display: flex;
+  align-items: center;
+}
+
+.sendButton {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  /* margin-bottom: 10px; */
+}
+
+.pageButton {
+  padding: 8px 12px;
+  margin: 0 4px;
+  border: 1px solid #777777;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.pageButton:hover {
+  padding: 8px 12px;
+  margin: 0 4px;
+  border: 1px solid #777777;
+  border-radius: 50%;
+  /* background-color: #fff; */
+  cursor: pointer;
+}
+
+.pageButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.currentPage {
+  background-color: #3f3f3f;
+  color: white;
+}
+
+.rowsPerPageSelect {
+  /* padding: px; */
+  margin-right: 10px;
+  border: 1px solid #777777;
+  border-radius: 20px !important;
+  width: 50px;
+  outline-color:#777777 ;
+
+
+
+
+}
+.rowsPerPageSelect:hover {
+  /* padding: px; */
+  margin-right: 10px;
+  border: 1px solid #777777;
+  border-radius: 20px !important;
+  width: 50px;
+  outline-color:#777777 ;
+
+}
+
+.rowsPerPageSelect:active {
+  /* padding: px; */
+  margin-right: 10px;
+  border: 1px solid #777777;
+  border-radius: 20px !important;
+  width: 50px;
+  outline-color:#777777 ;
+
+}
+
+.tableContainer{
+  overflow-x: scroll;
+  /* max-width: 80%; */
+}
+
+.rowsVisible {
+  margin-left: px;
+  display: flex;
+  align-items: center;
+  font-size:0.9rem ;
+}
+
+.downloadLink {
+  color: #007bff;
+  cursor: pointer;
+}
+
+.downloadLink span {
+  text-decoration: underline;
+}
+
+input[type="checkbox"] {
+  margin: 0;
+}
+
+
+.rowSelected {
+  background-color: #afeefe !important;
+}
+
+/* .green{
+  background-color: #bcf8dd !important;
+} */
+
+
+
+ .rowRejected {
+  background-color: #ffa178 !important;
+}  
