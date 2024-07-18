@@ -4,7 +4,7 @@ pipeline {
     tools {nodejs "NodeJS"}
    
  
-    stages {
+    stages { 
        
          stage('Checkout Stage') {
             steps {
