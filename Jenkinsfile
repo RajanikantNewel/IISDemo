@@ -5,29 +5,7 @@ pipeline {
    
  
     stages {
-         stage('BackUp Stage') {
-    steps {
-        script {
-             def currentDateTime = new Date().format("yyyyMMdd_HHmmss") // Get the current date and time in the specified format
-            def backupFolder = "C:\\IISDemo\\BackUp_Pipeline_Angular_2\\${currentDateTime}"
-echo "Output: ${backupFolder}"
-            // Create the backup folder
-          //
-        bat "mkdir ${backupFolder}"
-            // Check if node_modules directory exists
-            if (fileExists('node_modules')) {
-                // If it exists, remove it
-                bat 'rmdir /s /q node_modules'
-            } else {
-                echo 'node_modules directory not found. Skipping removal.'
-            }
-            // Copy the contents of the "dist" directory to the backup location
-            // Use /exclude to exclude the backup folder from the copy
-
-bat 'xcopy /s /y "*.*" "C:\\IISDemo\\BackUp_Pipeline_Angular_2\\20230926_124102"'
-        }
-    }
-}
+       
          stage('Checkout Stage') {
             steps {
                 git credentialsId: '462fb42f-257f-4d80-a5ff-6feb8a51f9d9', url: 'https://github.com/RajanikantNewel/IISDemo.git', branch: 'master'
@@ -41,7 +19,7 @@ bat 'xcopy /s /y "*.*" "C:\\IISDemo\\BackUp_Pipeline_Angular_2\\20230926_124102"
          stage('Build') {
             steps {
                 // Build the Angular application
-                bat 'npm run build'
+                bat 'npm start'
             }
         }
          stage('Deploy to IIS') {
