@@ -255,9 +255,9 @@ button:hover {
   }
 }
 
-input[type="text"] {
+/* input[type="text"] {
   background-color: ;
-}
+} */
 
 /* distribution-master-main */
 
@@ -295,9 +295,9 @@ input:focus,select:focus{
   outline: none;
 }
 
-input["number"]{
+/* input["number"]{
   height:38px;
-}
+} */
 
 
 .status-div div{
